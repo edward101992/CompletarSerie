@@ -4,7 +4,6 @@
  * -
  */
 package com.mycompany.completarserie;
-
 import java.util.Scanner;
 
 /**
@@ -66,8 +65,8 @@ public class Principal {
      
      public void llenarVector(int limite){
          /**
-          * vector[] variable del vector de inicio.
-          * i variable para usar el ciclo for.
+          * vector[]: variable del vector de inicio.
+          * i: variable para usar el ciclo for.
           */
          int vector[]= new int[limite];
          int i;
@@ -87,6 +86,13 @@ public class Principal {
          */
      
       public void mayorMenor(int vector[],int limite){
+          /**
+           * mayor: valiable que toma el numero mayor del vector
+           * menor: variable que toma el numero menor del vector
+           * fin: variable que toma el valor de limite
+           * array[]: vector que toma el valor del vector inicial
+           * 
+           */
          int mayor = 0;
          int menor = 0;
          int fin = limite;
@@ -115,6 +121,13 @@ public class Principal {
       * @param limite Limite del vector de inicio
       */
      public void imprimirSerie(int menor,int mayor,int vector[], int limite){   
+         /**
+          * negativo: variable que se guarda el valor dependiendo si hay 
+          * numeros negativos o no.
+          * j: variable para utilizar el ciclo for aniado.
+          * suma: variable en la que se guarda la diferencia entre el menor y el mayor.
+          * falta: variable boleana la cual sirve para determinar si falta un numero en la serie.
+          */
          int negativo, suma;            
          if(menor<0){
             negativo=menor*(-1);

@@ -97,11 +97,15 @@ public class Principal {
      }
       
      /**
-      * 
-      * @param menor
-      * @param mayor
-      * @param vector
-      * @param limite 
+      * Metodo imprimirSerie se encarga de 
+      * capturar si el numero menor es negativo
+      * esto se hace debido a que si es menor el vector cambia.
+      * Luego de eso compara los 2 vectores e imprime los numeros que no tienen
+      * en comun.
+      * @param menor Numero menor del vector de inicio
+      * @param mayor Numero mayor del vector de inicio
+      * @param vector Vector de inicio
+      * @param limite Limite del vector de inicio
       */
      public void imprimirSerie(int menor,int mayor,int vector[], int limite){   
          int negativo, suma;            

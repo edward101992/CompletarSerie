@@ -71,9 +71,12 @@ public class Principal {
          mayorMenor(vector,limite);
      }
         /**
-         * 
-         * @param vector
-         * @param limite 
+         * Metodo mayorMenor 
+         * este metodo se encarga de capturar el valor mayor
+         * y el menor del array de inicio, estos valores
+         * serviran para crear otro array desde menor hasta mayor
+         * @param vector Vector de inicio 
+         * @param limite Limite del vector de inicio
          */
      
       public void mayorMenor(int vector[],int limite){
@@ -92,6 +95,14 @@ public class Principal {
          }
          imprimirSerie(menor,mayor,array,fin);
      }
+      
+     /**
+      * 
+      * @param menor
+      * @param mayor
+      * @param vector
+      * @param limite 
+      */
      public void imprimirSerie(int menor,int mayor,int vector[], int limite){   
          int negativo, suma;            
          if(menor<0){
@@ -116,7 +127,8 @@ public class Principal {
              if(falta){
                  System.out.print(vector2[i] + "  ");
              }
-         }     
+         }
+          System.out.println("");  
      }
 }
     

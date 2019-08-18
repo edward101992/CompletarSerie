@@ -11,10 +11,13 @@ package com.mycompany.completarserie;
 public class Main {
 
     /**
-     * @param args the command line arguments
+     * Metodo el cual llama el metodo pedirVector de la
+     * clase Principal.
+     * @param args 
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Principal principal = new Principal();
+        principal.pedirVector();
     }
     
 }

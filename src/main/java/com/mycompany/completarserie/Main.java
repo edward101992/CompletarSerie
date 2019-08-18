@@ -12,7 +12,7 @@ public class Main {
 
     /**
      * Metodo el cual llama el metodo pedirVector de la
-     * clase Principal.
+     * clase Principal que es donde inicia el programa.
      * @param args 
      */
     public static void main(String[] args) {

@@ -47,6 +47,9 @@ public class Principal {
       */
      
      public void pedirVector(){
+         /**
+          * limite variable que delimite el Vector de inicio.
+          */
          int limite=0;
          System.out.println("Cuantos numeros va a ingresar:  ");
          limite = sc.nextInt();
@@ -62,6 +65,10 @@ public class Principal {
          */
      
      public void llenarVector(int limite){
+         /**
+          * vector[] variable del vector de inicio.
+          * i variable para usar el ciclo for.
+          */
          int vector[]= new int[limite];
          int i;
          for(i=0;i<limite;i++){

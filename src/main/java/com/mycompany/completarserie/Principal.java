@@ -1,5 +1,7 @@
 /**
  * Clase Principal la cual contiene la parte logica del programa
+ * contiene los metodos
+ * -
  */
 package com.mycompany.completarserie;
 
@@ -12,15 +14,22 @@ import java.util.Scanner;
  */
 public class Principal {
     
+    /**
+     * Variable sc se encarga de instancear la clase Scanner para ccapturar
+     * datos por consola.
+     */
+    
      Scanner sc = new Scanner(System.in);
 
     /**
      * Metodo get de la variable sc.
      * @return sc Nombre de la variable con la que se instancea Scanner.
      */
+     
     public Scanner getSc() {
         return sc;
     }
+    
     /**
      * Metodo set de la variable sc.
      * @param sc Nombre de la variable con la que se instancea Scanner.
@@ -66,6 +75,7 @@ public class Principal {
          * @param vector
          * @param limite 
          */
+     
       public void mayorMenor(int vector[],int limite){
          int mayor = 0;
          int menor = 0;

@@ -90,9 +90,33 @@ public class Principal {
                  menor=vector[i];
              }
          }
+         imprimirSerie(menor,mayor,array,fin);
      }
-     
-     
-         
-         
+     public void imprimirSerie(int menor,int mayor,int vector[], int limite){   
+         int negativo, suma;            
+         if(menor<0){
+            negativo=menor*(-1);
+            suma=negativo+mayor;
+         }else{
+            suma=mayor-menor;           
+         }        
+         int vector2[]= new int[suma+1];
+         for(int i=0;menor<=mayor;i++){
+            vector2[i]=menor;
+            menor++;
+         }     
+         System.out.println("Los numeros que faltan para completar la serie son : ");
+          for(int i=0;i<suma;i++){
+             boolean falta = true;
+             for(int j=0;j<limite;j++){
+                 if(vector[j]==vector2[i]){
+                     falta = false;
+                 }
+             }    
+             if(falta){
+                 System.out.print(vector2[i] + "  ");
+             }
+         }     
+     }
 }
+    
